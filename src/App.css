@@ -1,0 +1,76 @@
+/* game layout */
+.game {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 30px 20px;
+}
+
+.status {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.board-row {
+  display: flex;
+}
+
+/* squares */
+.square {
+  width: 70px;
+  height: 70px;
+  margin: -1px 0 0 -1px;
+  border: 1px solid #777777;
+  background-color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.winner {
+  background-color: #ffff88;
+}
+
+/* move history */
+.game-info {
+  min-width: 230px;
+}
+
+.game-info ol {
+  padding-left: 25px;
+}
+
+.game-info li {
+  margin-bottom: 7px;
+}
+
+.game-info button {
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.current-move {
+  font-weight: bold;
+}
+
+.sort-button {
+  margin-bottom: 10px;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .game {
+    display: block;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .board {
+    display: inline-block;
+  }
+
+  .game-info {
+    margin-top: 25px;
+    text-align: left;
+  }
+}
